@@ -670,10 +670,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: d9ed5c1b-0dea-41ba-b189-07aeb4ae3157
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
-  projectName: TankGame
-  organizationId: nuc_dodamce
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
