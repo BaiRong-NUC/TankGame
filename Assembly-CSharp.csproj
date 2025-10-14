@@ -36,6 +36,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Sctipts\MyGUI\Base\GUIBase.cs" />
+     <Compile Include="Assets\Sctipts\MyGUI\Base\GUIPosition.cs" />
+     <Compile Include="Assets\Sctipts\MyGUI\Base\GUIRoot.cs" />
+     <Compile Include="Assets\Sctipts\MyGUI\GUIButton.cs" />
+     <Compile Include="Assets\Sctipts\MyGUI\GUIInput.cs" />
+     <Compile Include="Assets\Sctipts\MyGUI\GUILabel.cs" />
+     <Compile Include="Assets\Sctipts\MyGUI\GUIOneToggle.cs" />
+     <Compile Include="Assets\Sctipts\MyGUI\GUISlider.cs" />
+     <Compile Include="Assets\Sctipts\MyGUI\GUITexture.cs" />
+     <Compile Include="Assets\Sctipts\MyGUI\GUIToggle.cs" />
      <Compile Include="Assets\Sctipts\PlayerPrefs\PlayerPrefsManage.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Reference Include="UnityEngine">
