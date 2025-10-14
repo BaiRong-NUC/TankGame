@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Sctipts\Game\RotateObj.cs" />
      <Compile Include="Assets\Sctipts\MyGUI\Base\GUIBase.cs" />
      <Compile Include="Assets\Sctipts\MyGUI\Base\GUIPosition.cs" />
      <Compile Include="Assets\Sctipts\MyGUI\Base\GUIRoot.cs" />
