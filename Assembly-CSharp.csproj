@@ -36,18 +36,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Sctipts\Game\RotateObj.cs" />
-     <Compile Include="Assets\Sctipts\MyGUI\Base\GUIBase.cs" />
-     <Compile Include="Assets\Sctipts\MyGUI\Base\GUIPosition.cs" />
-     <Compile Include="Assets\Sctipts\MyGUI\Base\GUIRoot.cs" />
-     <Compile Include="Assets\Sctipts\MyGUI\GUIButton.cs" />
-     <Compile Include="Assets\Sctipts\MyGUI\GUIInput.cs" />
-     <Compile Include="Assets\Sctipts\MyGUI\GUILabel.cs" />
-     <Compile Include="Assets\Sctipts\MyGUI\GUIOneToggle.cs" />
-     <Compile Include="Assets\Sctipts\MyGUI\GUISlider.cs" />
-     <Compile Include="Assets\Sctipts\MyGUI\GUITexture.cs" />
-     <Compile Include="Assets\Sctipts\MyGUI\GUIToggle.cs" />
-     <Compile Include="Assets\Sctipts\PlayerPrefs\PlayerPrefsManage.cs" />
+     <Compile Include="Assets\Scripts\Game\RotateObj.cs" />
+     <Compile Include="Assets\Scripts\MyGUI\Base\GUIBase.cs" />
+     <Compile Include="Assets\Scripts\MyGUI\Base\GUIPosition.cs" />
+     <Compile Include="Assets\Scripts\MyGUI\Base\GUIRoot.cs" />
+     <Compile Include="Assets\Scripts\MyGUI\GUIButton.cs" />
+     <Compile Include="Assets\Scripts\MyGUI\GUIInput.cs" />
+     <Compile Include="Assets\Scripts\MyGUI\GUILabel.cs" />
+     <Compile Include="Assets\Scripts\MyGUI\GUIOneToggle.cs" />
+     <Compile Include="Assets\Scripts\MyGUI\GUISlider.cs" />
+     <Compile Include="Assets\Scripts\MyGUI\GUITexture.cs" />
+     <Compile Include="Assets\Scripts\MyGUI\GUIToggle.cs" />
+     <Compile Include="Assets\Scripts\PlayerPrefs\PlayerPrefsManage.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <None Include="Assets\GameArt\TDSTK\Model\BlendColorsOverlayTexture.shader" />
     <Reference Include="UnityEngine">

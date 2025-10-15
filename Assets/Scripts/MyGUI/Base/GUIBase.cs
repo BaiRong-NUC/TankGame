@@ -17,7 +17,7 @@ public abstract class GUIBase : MonoBehaviour
     // 2. 内容信息
     public GUIContent guiContent = new GUIContent();
     // 3. 自定义样式
-    public GUIStyle guiStyle = new GUIStyle();
+    public GUIStyle guiStyle;
     // 4. 自定义样式是否开始
     public GUIType useCustomStyle = GUIType.Off;
 
