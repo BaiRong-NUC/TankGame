@@ -647,13 +647,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
+      propertyPath: isOn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
       propertyPath: guiPos.width
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
       propertyPath: guiPos.height
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
@@ -663,12 +668,12 @@ PrefabInstance:
     - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
       propertyPath: guiPos.offset.x
-      value: -99.4
+      value: -164.7
       objectReference: {fileID: 0}
     - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
       propertyPath: guiPos.offset.y
-      value: -172.25
+      value: -187.7
       objectReference: {fileID: 0}
     - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
@@ -685,7 +690,12 @@ PrefabInstance:
         type: 3}
       propertyPath: guiContent.m_Image
       value: 
-      objectReference: {fileID: 2800000, guid: b110944694c96df4ea3da29defe1fee3, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
       propertyPath: guiStyle.m_Alignment
@@ -699,12 +709,12 @@ PrefabInstance:
     - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
       propertyPath: guiStyle.m_ContentOffset.x
-      value: -17.07
+      value: 37.3
       objectReference: {fileID: 0}
     - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
       propertyPath: guiStyle.m_ContentOffset.y
-      value: -14.77
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
@@ -716,10 +726,25 @@ PrefabInstance:
       propertyPath: guiStyle.m_Overflow.m_Right
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_Active.m_Background
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_Normal.m_Background
+      value: 
+      objectReference: {fileID: 2800000, guid: b110944694c96df4ea3da29defe1fee3, type: 3}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_OnNormal.m_Background
+      value: 
+      objectReference: {fileID: 2800000, guid: 23dd12da0e30dd24fb3a8ee1b09691de, type: 3}
     - target: {fileID: 6000561559063242823, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
       propertyPath: m_Name
-      value: GUIToggle
+      value: MusicToggle
       objectReference: {fileID: 0}
     - target: {fileID: 6000561559063242823, guid: d3538a1323907e04caeeb6cfa305eaba,
         type: 3}
@@ -1843,6 +1868,176 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: -10
+--- !u!1001 &1693010939
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 826176975}
+    m_Modifications:
+    - target: {fileID: 6000561559063242821, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242821, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242821, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242821, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242821, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242821, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242821, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242821, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242821, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242821, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242821, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: isOn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiPos.width
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiPos.height
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: useCustomStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiPos.offset.x
+      value: -164.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiPos.offset.y
+      value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 15e423c4d8fe3ad42aa4d8e19ff60be3,
+        type: 3}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiContent.m_Text
+      value: "\u97F3\u6548"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiContent.m_Image
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_Overflow.m_Top
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_ContentOffset.x
+      value: 37.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_ContentOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_Overflow.m_Left
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_Overflow.m_Right
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_Active.m_Background
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_Normal.m_Background
+      value: 
+      objectReference: {fileID: 2800000, guid: b110944694c96df4ea3da29defe1fee3, type: 3}
+    - target: {fileID: 6000561559063242822, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: guiStyle.m_OnNormal.m_Background
+      value: 
+      objectReference: {fileID: 2800000, guid: 23dd12da0e30dd24fb3a8ee1b09691de, type: 3}
+    - target: {fileID: 6000561559063242823, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundToggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000561559063242823, guid: d3538a1323907e04caeeb6cfa305eaba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d3538a1323907e04caeeb6cfa305eaba, type: 3}
 --- !u!1001 &1782264372
 PrefabInstance:
   m_ObjectHideFlags: 0
