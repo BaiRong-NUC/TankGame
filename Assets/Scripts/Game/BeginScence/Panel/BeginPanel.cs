@@ -31,14 +31,15 @@ public class BeginPanel : PanelBase<BeginPanel>
         // 退出按钮
         exitButton.clickEvent += () =>
         {
-            print("退出按钮被点击");
+            print("退出按钮被点击: Application.Quit() ");
             Application.Quit();
         };
 
         // 排行榜按钮
         rankButton.clickEvent += () =>
         {
-            print("排行榜按钮被点击");
+            RankPanel.instance.OnOpen();
+            this.OnClose(); //隐藏开始面板,防止事件穿透
         };
     }
 }
