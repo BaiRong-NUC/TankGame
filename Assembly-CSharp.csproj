@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Game\BeginScence\Panel\Base\PanelBase.cs" />
+     <Compile Include="Assets\Scripts\Game\BeginScence\Panel\BeginPanel.cs" />
      <Compile Include="Assets\Scripts\Game\BeginScence\RotateObj.cs" />
      <Compile Include="Assets\Scripts\MyGUI\Base\GUIBase.cs" />
      <Compile Include="Assets\Scripts\MyGUI\Base\GUIPosition.cs" />

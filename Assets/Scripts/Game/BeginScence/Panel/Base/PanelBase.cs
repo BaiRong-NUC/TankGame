@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 游戏各种面板的基类,单例基类
-// T 一定是一个类
+// T 一定是一个引用类型
 public class PanelBase<T> : MonoBehaviour where T : class
 {
     private static T _instance;

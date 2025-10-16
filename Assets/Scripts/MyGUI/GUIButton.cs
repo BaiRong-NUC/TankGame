@@ -11,7 +11,7 @@ public class GUIButton : GUIBase
     {
         if (GUI.Button(this.guiPos.pos, this.guiContent))
         {
-            Debug.Log("按钮被点击");
+            // Debug.Log("按钮被点击");
             clickEvent?.Invoke();
         }
     }
@@ -20,7 +20,7 @@ public class GUIButton : GUIBase
     {
         if (GUI.Button(this.guiPos.pos, this.guiContent, this.guiStyle))
         {
-            Debug.Log("按钮被点击");
+            // Debug.Log("按钮被点击");
             clickEvent?.Invoke();
         }
     }
