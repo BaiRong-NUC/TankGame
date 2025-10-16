@@ -12,4 +12,7 @@ public class MusicData
     public float musicVolume;
     // 音效音量
     public float effectVolume;
+
+    // 是否是第一次打开游戏
+    public bool noFirstOpen = false;
 }
