@@ -40,6 +40,8 @@
      <Compile Include="Assets\Scripts\Game\BeginScence\Panel\BeginPanel.cs" />
      <Compile Include="Assets\Scripts\Game\BeginScence\Panel\SettingPanel.cs" />
      <Compile Include="Assets\Scripts\Game\BeginScence\RotateObj.cs" />
+     <Compile Include="Assets\Scripts\Game\Data\MusicData.cs" />
+     <Compile Include="Assets\Scripts\Game\Data\MusicManage.cs" />
      <Compile Include="Assets\Scripts\MyGUI\Base\GUIBase.cs" />
      <Compile Include="Assets\Scripts\MyGUI\Base\GUIPosition.cs" />
      <Compile Include="Assets\Scripts\MyGUI\Base\GUIRoot.cs" />
