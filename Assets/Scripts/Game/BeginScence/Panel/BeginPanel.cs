@@ -23,7 +23,9 @@ public class BeginPanel : PanelBase<BeginPanel>
         // 设置按钮
         settingButton.clickEvent += () =>
         {
-            print("设置按钮被点击");
+            // print("设置按钮被点击");
+            SettingPanel.instance.OnOpen();
+            this.OnClose(); //隐藏开始面板,防止事件穿透
         };
 
         // 退出按钮
