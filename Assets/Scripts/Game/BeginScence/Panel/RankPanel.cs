@@ -40,4 +40,16 @@ public class RankPanel : PanelBase<RankPanel>
         }
         this.OnClose();
     }
+
+    public override void OnOpen()
+    {
+        base.OnOpen();
+        UpdateRank();
+    }
+
+    // 更新排名数据
+    public void UpdateRank()
+    {
+
+    }
 }
