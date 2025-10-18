@@ -46,6 +46,7 @@
      <Compile Include="Assets\Scripts\Game\Panel\BeginScene\RankPanel.cs" />
      <Compile Include="Assets\Scripts\Game\Panel\BeginScene\SettingPanel.cs" />
      <Compile Include="Assets\Scripts\Game\Panel\GameScene\GamePanel.cs" />
+     <Compile Include="Assets\Scripts\Game\Panel\GameScene\QuitPanel.cs" />
      <Compile Include="Assets\Scripts\MyGUI\Base\GUIBase.cs" />
      <Compile Include="Assets\Scripts\MyGUI\Base\GUIPosition.cs" />
      <Compile Include="Assets\Scripts\MyGUI\Base\GUIRoot.cs" />

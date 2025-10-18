@@ -28,6 +28,7 @@ public class GamePanel : PanelBase<GamePanel>
         this.quitBtn.clickEvent += () =>
         {
             // 返回主菜单,弹出确定框
+            QuitPanel.instance.OnOpen();
         };
 
         this.settingBtn.clickEvent += () =>
