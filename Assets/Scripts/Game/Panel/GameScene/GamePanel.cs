@@ -29,11 +29,17 @@ public class GamePanel : PanelBase<GamePanel>
         {
             // 返回主菜单,弹出确定框
             QuitPanel.instance.OnOpen();
+
+            // 弹出确定框暂停游戏
+            Time.timeScale = 0f;
         };
 
         this.settingBtn.clickEvent += () =>
         {
             SettingPanel.instance.OnOpen();
+            
+            // 弹出设置框暂停游戏
+            Time.timeScale = 0f;
         };
     }
 

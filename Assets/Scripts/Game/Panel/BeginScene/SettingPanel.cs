@@ -56,4 +56,11 @@ public class SettingPanel : PanelBase<SettingPanel>
         base.OnOpen();
         UpdateMusicData();
     }
+
+    public override void OnClose()
+    {
+        base.OnClose();
+        // 关闭面板恢复游戏
+        Time.timeScale = 1f;
+    }
 }

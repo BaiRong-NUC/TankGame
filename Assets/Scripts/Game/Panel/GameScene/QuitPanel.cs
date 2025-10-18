@@ -29,4 +29,11 @@ public class QuitPanel : PanelBase<QuitPanel>
 
         this.OnClose(); // 默认关闭
     }
+
+    public override void OnClose()
+    {
+        base.OnClose();
+        // 关闭面板恢复游戏
+        Time.timeScale = 1f;
+    }
 }
