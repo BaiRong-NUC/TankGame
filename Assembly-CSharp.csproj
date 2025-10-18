@@ -36,15 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Game\BeginScence\Panel\Base\PanelBase.cs" />
-     <Compile Include="Assets\Scripts\Game\BeginScence\Panel\BeginPanel.cs" />
-     <Compile Include="Assets\Scripts\Game\BeginScence\Panel\RankPanel.cs" />
-     <Compile Include="Assets\Scripts\Game\BeginScence\Panel\SettingPanel.cs" />
      <Compile Include="Assets\Scripts\Game\BeginScence\RotateObj.cs" />
      <Compile Include="Assets\Scripts\Game\Data\GameDataManage.cs" />
      <Compile Include="Assets\Scripts\Game\Data\MusicData.cs" />
      <Compile Include="Assets\Scripts\Game\Data\MusicManage.cs" />
      <Compile Include="Assets\Scripts\Game\Data\RankData.cs" />
+     <Compile Include="Assets\Scripts\Game\Panel\Base\PanelBase.cs" />
+     <Compile Include="Assets\Scripts\Game\Panel\BeginScene\BeginPanel.cs" />
+     <Compile Include="Assets\Scripts\Game\Panel\BeginScene\RankPanel.cs" />
+     <Compile Include="Assets\Scripts\Game\Panel\BeginScene\SettingPanel.cs" />
      <Compile Include="Assets\Scripts\MyGUI\Base\GUIBase.cs" />
      <Compile Include="Assets\Scripts\MyGUI\Base\GUIPosition.cs" />
      <Compile Include="Assets\Scripts\MyGUI\Base\GUIRoot.cs" />

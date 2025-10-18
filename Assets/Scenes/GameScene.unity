@@ -1607,7 +1607,7 @@ PrefabInstance:
     - target: {fileID: 2458877076198291955, guid: 96fb8f763f9b9144f9b695b395b9a7b7,
         type: 3}
       propertyPath: guiPos.width
-      value: 420.99
+      value: 573.18
       objectReference: {fileID: 0}
     - target: {fileID: 2458877076198291955, guid: 96fb8f763f9b9144f9b695b395b9a7b7,
         type: 3}
@@ -3452,7 +3452,7 @@ PrefabInstance:
     - target: {fileID: 2458877076198291955, guid: 96fb8f763f9b9144f9b695b395b9a7b7,
         type: 3}
       propertyPath: guiPos.width
-      value: 420.99
+      value: 573.18
       objectReference: {fileID: 0}
     - target: {fileID: 2458877076198291955, guid: 96fb8f763f9b9144f9b695b395b9a7b7,
         type: 3}
