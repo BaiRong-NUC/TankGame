@@ -3,25 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 音乐管理类
-public class MusicManage
+public class GameDataManage
 {
-    private static MusicManage _instance;
-    public static MusicManage instance
+    private static GameDataManage _instance;
+    public static GameDataManage instance
     {
         get
         {
             if (_instance == null)
             {
-                _instance = new MusicManage();
+                _instance = new GameDataManage();
             }
             return _instance;
         }
     }
 
+    // 音乐数据
     public MusicData musicData;
 
-    private MusicManage()
+    // 排行榜数据
+    public RankList rankList;
+
+
+    private GameDataManage()
     {
+        // 初始化读取音乐数据
         musicData = PlayerPrefsManage.instance.LoadData(typeof(MusicData), "MusicData") as MusicData;
 
         if (this.musicData.noFirstOpen == false)
@@ -35,6 +41,9 @@ public class MusicManage
             this.musicData.effectVolume = 100f;
             PlayerPrefsManage.instance.SaveData(this.musicData, "MusicData");
         }
+
+        // 初始化读取排行榜数据
+        this.rankList = PlayerPrefsManage.instance.LoadData(typeof(RankList), "RankList") as RankList;
     }
 
     // 开关背景音乐
@@ -63,5 +72,19 @@ public class MusicManage
     {
         this.musicData.effectVolume = volume;
         PlayerPrefsManage.instance.SaveData(this.musicData, "MusicData");
+    }
+
+    // 添加排行榜数据
+    public void AddRankData(string playerName, int score, float time)
+    {
+        this.rankList.rankDatas.Add(new RankData(playerName, score, time));
+        // 按通关时间排序,时间短的在前面
+        this.rankList.rankDatas.Sort((a, b) => a.time < b.time ? -1 : 1);
+        // 只保留前10名
+        if (this.rankList.rankDatas.Count > RankPanel.instance.rankSize)
+        {
+            this.rankList.rankDatas.RemoveRange(RankPanel.instance.rankSize, this.rankList.rankDatas.Count - RankPanel.instance.rankSize);
+        }
+        PlayerPrefsManage.instance.SaveData(this.rankList, "RankList");
     }
 }

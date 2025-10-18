@@ -13,16 +13,16 @@ public class SettingPanel : PanelBase<SettingPanel>
     void Start()
     {
         //音乐大小
-        musicSlider.valueChangedEvent += (value) => MusicManage.instance.SetBkMusicVolume(value);
+        musicSlider.valueChangedEvent += (value) => GameDataManage.instance.SetBkMusicVolume(value);
 
         //音效大小
-        soundSlider.valueChangedEvent += (value) => MusicManage.instance.SetEffectMusicVolume(value);
+        soundSlider.valueChangedEvent += (value) => GameDataManage.instance.SetEffectMusicVolume(value);
 
         //音乐开关
-        musicToggle.toggleEvent += (isOn) => MusicManage.instance.SwitchBkMusic(isOn);
+        musicToggle.toggleEvent += (isOn) => GameDataManage.instance.SwitchBkMusic(isOn);
 
         //音效开关
-        soundToggle.toggleEvent += (isOn) => MusicManage.instance.SwitchEffectMusic(isOn);
+        soundToggle.toggleEvent += (isOn) => GameDataManage.instance.SwitchEffectMusic(isOn);
 
         //关闭按钮
         closeButton.clickEvent += () =>
@@ -39,7 +39,7 @@ public class SettingPanel : PanelBase<SettingPanel>
     // 更新音乐数据
     public void UpdateMusicData()
     {
-        MusicData musicData = MusicManage.instance.musicData;
+        MusicData musicData = GameDataManage.instance.musicData;
         musicSlider.value = musicData.musicVolume;
         soundSlider.value = musicData.effectVolume;
         musicToggle.isOn = musicData.isOpenBk;
