@@ -11,14 +11,7 @@ public class PanelBase<T> : MonoBehaviour where T : class
 
     protected void Awake()
     {
-        if (_instance == null)
-        {
-            _instance = this as T;
-        }
-        else
-        {
-            Destroy(this.gameObject); // 销毁重复的实例
-        }
+        _instance = this as T;
     }
 
     // 面板打开

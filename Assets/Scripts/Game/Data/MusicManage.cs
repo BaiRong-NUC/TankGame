@@ -13,14 +13,7 @@ public class MusicManage : MonoBehaviour
 
     private void Awake()
     {
-        if (_instance == null)
-        {
-            _instance = this;
-        }
-        else
-        {
-            Destroy(this.gameObject); // 销毁重复的实例
-        }
+        _instance = this;
         // 获取音频源
         this.bgmAudioSource = this.GetComponent<AudioSource>();
 

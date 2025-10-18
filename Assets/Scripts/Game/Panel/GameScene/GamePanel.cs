@@ -32,6 +32,7 @@ public class GamePanel : PanelBase<GamePanel>
 
         this.settingBtn.clickEvent += () =>
         {
+            SettingPanel.instance.OnOpen();
         };
     }
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SettingPanel : PanelBase<SettingPanel>
 {
@@ -28,8 +29,11 @@ public class SettingPanel : PanelBase<SettingPanel>
         closeButton.clickEvent += () =>
         {
             this.OnClose();
-
-            BeginPanel.instance.OnOpen(); //打开开始面板
+            //只有在开始场景点击设置的时候才打开开始面板
+            if (SceneManager.GetActiveScene().name == "BeginScene")
+            {
+                BeginPanel.instance.OnOpen(); //打开开始面板
+            }
         };
 
         // 默认关闭
