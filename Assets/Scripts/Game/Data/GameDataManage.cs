@@ -50,6 +50,7 @@ public class GameDataManage
     public void SwitchBkMusic(bool isOpen)
     {
         this.musicData.isOpenBk = isOpen;
+        MusicManage.instance.ChangeOpen(isOpen);
         PlayerPrefsManage.instance.SaveData(this.musicData, "MusicData");
     }
 
@@ -64,6 +65,7 @@ public class GameDataManage
     public void SetBkMusicVolume(float volume)
     {
         this.musicData.musicVolume = volume;
+        MusicManage.instance.ChangeValue(volume);
         PlayerPrefsManage.instance.SaveData(this.musicData, "MusicData");
     }
 
