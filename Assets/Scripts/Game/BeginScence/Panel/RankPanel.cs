@@ -14,13 +14,13 @@ public class RankPanel : PanelBase<RankPanel>
     // private List<GUILabel> rankLabels = new List<GUILabel>();
     // 玩家名数组,和排名数组一一对应
     public GameObject names;
-    private List<Text> nameLabels = new List<Text>();
+    private List<GUILabel> nameLabels = new List<GUILabel>();
     // 分数数组,和排名数组一一对应
     public GameObject scores;
-    private List<Text> scoreLabels = new List<Text>();
+    private List<GUILabel> scoreLabels = new List<GUILabel>();
     // 通关时间数组,和排名数组一一对应
     public GameObject times;
-    private List<Text> timeLabels = new List<Text>();
+    private List<GUILabel> timeLabels = new List<GUILabel>();
 
     public int rankSize = 10; // 显示前10名
     void Start()
@@ -35,10 +35,12 @@ public class RankPanel : PanelBase<RankPanel>
         for (int i = 0; i < this.rankSize; i++)
         {
             // this.rankLabels.Add(this.ranks.transform.GetChild(i).GetComponent<GUILabel>());
-            this.nameLabels.Add(this.names.transform.GetChild(i).GetComponent<Text>());
-            this.scoreLabels.Add(this.scores.transform.GetChild(i).GetComponent<Text>());
-            this.timeLabels.Add(this.times.transform.GetChild(i).GetComponent<Text>());
+            this.nameLabels.Add(this.names.transform.GetChild(i).GetComponent<GUILabel>());
+            this.scoreLabels.Add(this.scores.transform.GetChild(i).GetComponent<GUILabel>());
+            this.timeLabels.Add(this.times.transform.GetChild(i).GetComponent<GUILabel>());
         }
+        // // 测试添加数据
+        // GameDataManage.instance.AddRankData("玩家A", 1500, 8432);
         this.OnClose();
     }
 
@@ -57,20 +59,20 @@ public class RankPanel : PanelBase<RankPanel>
         for (int i = 0; i < rankDatas.Count; i++)
         {
             // this.rankLabels[i].text = (i + 1).ToString();
-            this.nameLabels[i].text = rankDatas[i].playerName;
-            this.scoreLabels[i].text = rankDatas[i].score.ToString();
+            this.nameLabels[i].guiContent.text = rankDatas[i].playerName;
+            this.scoreLabels[i].guiContent.text = rankDatas[i].score.ToString();
             // 存储的时间是秒,格式化为 时:分:秒.毫秒
             float time = (int)rankDatas[i].time;
-            this.timeLabels[i].text = "";
+            this.timeLabels[i].guiContent.text = "";
             if (time / 3600 > 0)
             {
-                this.timeLabels[i].text += time / 3600 + "时:";
+                this.timeLabels[i].guiContent.text += (int)time / 3600 + "时:";
             }
             if ((time % 3600) / 60 > 0 || time / 3600 > 0)
             {
-                this.timeLabels[i].text += (time % 3600) / 60 + "分:";
+                this.timeLabels[i].guiContent.text += (int)(time % 3600) / 60 + "分:";
             }
-            this.timeLabels[i].text += (time % 60) + "秒";
+            this.timeLabels[i].guiContent.text += (int)(time % 60) + "秒";
         }
     }
 }
