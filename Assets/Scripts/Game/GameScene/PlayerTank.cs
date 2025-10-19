@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerTank : TankBase
 {
+    // [HideInInspector]
     // 当前的武器
-    public WeaponObj weaponObj;
+    public WeaponObj weaponObj = null;
 
     void Start()
     {

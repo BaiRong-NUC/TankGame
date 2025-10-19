@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 50;
 
+    [HideInInspector]
     public TankBase ownerTank;
 
     public GameObject hitEffectPrefab;

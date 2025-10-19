@@ -9,6 +9,7 @@ public class WeaponObj : MonoBehaviour
     // 发射子弹的位置
     public Transform[] shootPos;
 
+    [HideInInspector]
     // 这个武器的拥有者,传递给子弹
     public TankBase ownerTank;
 
