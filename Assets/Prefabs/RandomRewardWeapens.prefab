@@ -151,6 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cad5b6370d14e8d4f9b8c2a86ca4f758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rewardEffect: {fileID: 8679849372345982139, guid: edfb50a492bb20a41b12fe25d23dcc8e,
+    type: 3}
   weaponPrefabs:
   - {fileID: 848968298486755360, guid: 185d6594b762b2c479c53f322cfc750f, type: 3}
   - {fileID: 5834536928870383700, guid: c941abbb1a86786468aef5dc598c89ee, type: 3}
