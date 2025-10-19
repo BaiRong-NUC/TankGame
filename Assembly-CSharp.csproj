@@ -42,6 +42,7 @@
      <Compile Include="Assets\Scripts\Game\Data\MusicManage.cs" />
      <Compile Include="Assets\Scripts\Game\Data\RankData.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\Base\TankBase.cs" />
+     <Compile Include="Assets\Scripts\Game\GameScene\MinMapMove.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\PlayerTank.cs" />
      <Compile Include="Assets\Scripts\Game\Panel\Base\PanelBase.cs" />
      <Compile Include="Assets\Scripts\Game\Panel\BeginScene\BeginPanel.cs" />
