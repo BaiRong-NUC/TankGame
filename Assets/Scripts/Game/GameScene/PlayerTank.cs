@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerTank : TankBase
 {
+    // 当前的武器
+    public WeaponObj weaponObj;
+
     void Start()
     {
 
@@ -32,6 +35,10 @@ public class PlayerTank : TankBase
     public override void Fire()
     {
         // 玩家开火逻辑
+        if (this.weaponObj != null)
+        {
+            this.weaponObj.Fire();
+        }
     }
 
     public override void Dead()

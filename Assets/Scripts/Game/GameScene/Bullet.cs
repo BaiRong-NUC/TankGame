@@ -1,0 +1,44 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Bullet : MonoBehaviour
+{
+    public float speed = 50;
+
+    public TankBase ownerTank;
+
+    public GameObject hitEffectPrefab;
+
+    void Update()
+    {
+        this.transform.Translate(Vector3.forward * speed * Time.deltaTime);
+    }
+
+    public void SetOwnerTank(TankBase tank)
+    {
+        this.ownerTank = tank;
+    }
+
+    // 碰撞开始
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Wall"))
+        {
+            //碰到墙面销毁
+            if (this.hitEffectPrefab != null)
+            {
+                GameObject bulletEffect = Instantiate(hitEffectPrefab, this.transform.position, this.transform.rotation);
+                AudioSource audioSource = bulletEffect.GetComponent<AudioSource>();
+                if (audioSource != null)
+                {
+                    // 音量数据受游戏设置控制
+                    audioSource.mute = GameDataManage.instance.musicData.isOpenEffect ? false : true;
+                    audioSource.volume = GameDataManage.instance.musicData.effectVolume / 100f;
+                    audioSource.Play();
+                }
+            }
+            Destroy(this.gameObject);
+        }
+    }
+}

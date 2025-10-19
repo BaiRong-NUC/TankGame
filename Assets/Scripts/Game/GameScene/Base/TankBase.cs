@@ -56,7 +56,8 @@ public abstract class TankBase : MonoBehaviour
             AudioSource audioSource = this.deadEffectPrefab.GetComponent<AudioSource>();
             if (audioSource != null)
             {
-                audioSource.volume = GameDataManage.instance.musicData.effectVolume;
+                // 音量大小 0-1
+                audioSource.volume = GameDataManage.instance.musicData.effectVolume / 100f;
 
                 audioSource.mute = GameDataManage.instance.musicData.isOpenEffect ? false : true;
 
