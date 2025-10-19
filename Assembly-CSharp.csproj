@@ -45,6 +45,7 @@
      <Compile Include="Assets\Scripts\Game\GameScene\Bullet.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\MinMapMove.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\PlayerTank.cs" />
+     <Compile Include="Assets\Scripts\Game\GameScene\WeapenRewards.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\WeaponObj.cs" />
      <Compile Include="Assets\Scripts\Game\Panel\Base\PanelBase.cs" />
      <Compile Include="Assets\Scripts\Game\Panel\BeginScene\BeginPanel.cs" />

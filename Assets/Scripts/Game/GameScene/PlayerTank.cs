@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class PlayerTank : TankBase
 {
-    // [HideInInspector]
+    [HideInInspector]
     // 当前的武器
     public WeaponObj weaponObj = null;
 
-    void Start()
-    {
-
-    }
-
+    public Transform weaponPoint;
     void Update()
     {
         // 控制坦克移动和旋转的逻辑
@@ -52,5 +48,25 @@ public class PlayerTank : TankBase
         base.TakeDamage(attacker);
         // 更新UI血条
         GamePanel.instance.UpdateHp(this.maxHp, this.hp);
+    }
+
+    // 设置武器
+    public void SetWeapon(GameObject weapon)
+    {
+        // 销毁当前武器
+        if (this.weaponObj != null)
+        {
+            Destroy(this.weaponObj.gameObject);
+            this.weaponObj = null;
+        }
+        // 设置新武器坐标
+        weapon.transform.SetParent(this.weaponPoint);
+        weapon.transform.localPosition = Vector3.zero; //设置相对于父对象的坐标为 0,0,0
+        weapon.transform.localRotation = Quaternion.identity;
+        weapon.transform.localScale = Vector3.one;
+        //记录当前武器
+        this.weaponObj = weapon.GetComponent<WeaponObj>();
+        // 设置武器拥有者
+        this.weaponObj.SetOwnerTank(this);
     }
 }
