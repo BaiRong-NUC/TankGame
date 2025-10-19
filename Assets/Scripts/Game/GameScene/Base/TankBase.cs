@@ -20,6 +20,9 @@ public abstract class TankBase : MonoBehaviour
     // 开火
     public abstract void Fire();
 
+    // 炮台
+    public Transform headTransform;
+
     // 受到伤害
     public virtual void TakeDamage(TankBase attacker)
     {
