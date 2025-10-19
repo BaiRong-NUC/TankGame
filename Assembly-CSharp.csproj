@@ -41,6 +41,7 @@
      <Compile Include="Assets\Scripts\Game\Data\MusicData.cs" />
      <Compile Include="Assets\Scripts\Game\Data\MusicManage.cs" />
      <Compile Include="Assets\Scripts\Game\Data\RankData.cs" />
+     <Compile Include="Assets\Scripts\Game\GameScene\AutoDestroy.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\Base\TankBase.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\Bullet.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\MinMapMove.cs" />
