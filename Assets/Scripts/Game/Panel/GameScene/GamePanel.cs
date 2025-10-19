@@ -37,7 +37,7 @@ public class GamePanel : PanelBase<GamePanel>
         this.settingBtn.clickEvent += () =>
         {
             SettingPanel.instance.OnOpen();
-            
+
             // 弹出设置框暂停游戏
             Time.timeScale = 0f;
         };

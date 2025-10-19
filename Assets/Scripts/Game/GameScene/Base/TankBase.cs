@@ -7,8 +7,8 @@ public abstract class TankBase : MonoBehaviour
     // 坦克公共属性
     public int akt;
     public int def;
-    public int maxHp;
-    public int hp;
+    public int maxHp = 100;
+    public int hp = 100;
 
     public float speed = 10;
     public float rotateSpeed = 100;
