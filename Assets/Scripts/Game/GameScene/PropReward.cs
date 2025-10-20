@@ -34,8 +34,11 @@ public class PropReward : MonoBehaviour
                         {
                             playerTank.hp = playerTank.maxHp;
                         }
-                        // 更新UI血条
-                        GamePanel.instance.UpdateHp(playerTank.maxHp, playerTank.hp);
+                        if (GamePanel.instance != null)
+                        {
+                            // 更新UI血条
+                            GamePanel.instance.UpdateHp(playerTank.maxHp, playerTank.hp);
+                        }
                         break;
                     case PropType.Defense:
                         playerTank.def += changeValue;

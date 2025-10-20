@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
     // 碰撞开始
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Wall"))
+        if (other.CompareTag("Wall") || other.CompareTag("Cube"))
         {
             //碰到墙面销毁
             if (this.hitEffectPrefab != null)
