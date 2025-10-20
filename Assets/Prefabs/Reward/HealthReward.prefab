@@ -154,3 +154,4 @@ MonoBehaviour:
   propType: 0
   rewardEffect: {fileID: 8679849372345982139, guid: edfb50a492bb20a41b12fe25d23dcc8e,
     type: 3}
+  changeValue: 20

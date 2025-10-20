@@ -107,8 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27cee7ebe30dbcd409a4922b5f7b66ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  akt: 5
-  def: 0
+  akt: 30
+  def: 2
   maxHp: 100
   hp: 100
   speed: 10
