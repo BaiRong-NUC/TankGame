@@ -46,6 +46,7 @@
      <Compile Include="Assets\Scripts\Game\GameScene\Bullet.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\CubeObj.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\MinMapMove.cs" />
+     <Compile Include="Assets\Scripts\Game\GameScene\MonsterStayTank.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\PlayerTank.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\PropReward.cs" />
      <Compile Include="Assets\Scripts\Game\GameScene\WeapenRewards.cs" />

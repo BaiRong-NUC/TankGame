@@ -47,7 +47,7 @@ public class PlayerTank : TankBase
     {
         base.TakeDamage(attacker);
         // 更新UI血条
-        GamePanel.instance.UpdateHp(this.maxHp, this.hp);
+        GamePanel.instance?.UpdateHp(this.maxHp, this.hp);
     }
 
     // 设置武器
