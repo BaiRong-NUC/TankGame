@@ -29,6 +29,9 @@ public class MonsterMoveTank : TankBase
 
     public Rect hpRect = new Rect(10, 10, 100, 15);
 
+    
+    private float showHpTime = 0; // 受伤血条显示时间
+
     private void RandomPos()
     {
 
@@ -90,20 +93,32 @@ public class MonsterMoveTank : TankBase
     // 怪物血条
     private void OnGUI()
     {
-        // 3d物体转化为屏幕坐标,屏幕坐标转化为GUI坐标
-        Vector3 screenPos = Camera.main.WorldToScreenPoint(this.transform.position + Vector3.up * 2);
-        Vector2 guiPos = new Vector2(screenPos.x, Screen.height - screenPos.y);
+        if (this.showHpTime > 0)
+        {
+            // 3d物体转化为屏幕坐标,屏幕坐标转化为GUI坐标
+            Vector3 screenPos = Camera.main.WorldToScreenPoint(this.transform.position + Vector3.up * 2);
+            Vector2 guiPos = new Vector2(screenPos.x, Screen.height - screenPos.y);
 
-        // 血条背景
-        hpBgRect.x = guiPos.x - this.hpBgRect.width / 2;
-        // hpBgRect.x = guiPos.x;
-        hpBgRect.y = guiPos.y;
-        GUI.DrawTexture(hpBgRect, hpBgTexture);
-        // 血条
-        hpRect.x = guiPos.x - this.hpBgRect.width / 2;
-        // hpRect.x = guiPos.x;
-        hpRect.y = guiPos.y;
-        hpRect.width = (float)this.hp / this.maxHp * hpBgRect.width;
-        GUI.DrawTexture(hpRect, hpTexture);
+            // 血条背景
+            hpBgRect.x = guiPos.x - this.hpBgRect.width / 2;
+            // hpBgRect.x = guiPos.x;
+            hpBgRect.y = guiPos.y;
+            GUI.DrawTexture(hpBgRect, hpBgTexture);
+            // 血条
+            hpRect.x = guiPos.x - this.hpBgRect.width / 2;
+            // hpRect.x = guiPos.x;
+            hpRect.y = guiPos.y;
+            hpRect.width = (float)this.hp / this.maxHp * hpBgRect.width;
+            GUI.DrawTexture(hpRect, hpTexture);
+            this.showHpTime -= Time.deltaTime;
+        }
+    }
+
+    override public void TakeDamage(TankBase damage)
+    {
+        base.TakeDamage(damage);
+
+        // 受伤显示血条
+        this.showHpTime = 2f;
     }
 }
