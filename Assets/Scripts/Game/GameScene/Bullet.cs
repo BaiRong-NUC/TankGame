@@ -42,7 +42,6 @@ public class Bullet : MonoBehaviour
                     audioSource.Play();
                 }
             }
-            Destroy(this.gameObject);
 
             // 如果碰到坦克，造成伤害
             TankBase hitTank = other.GetComponent<TankBase>();
@@ -50,6 +49,8 @@ public class Bullet : MonoBehaviour
             {
                 hitTank.TakeDamage(this.ownerTank);
             }
+
+            Destroy(this.gameObject);
         }
     }
 }
