@@ -44,7 +44,10 @@ public class PlayerTank : TankBase
 
     public override void Dead()
     {
-        base.Dead();
+        //玩家死亡
+        Time.timeScale = 0f; //暂停游戏
+
+        FailPanel.instance.OnOpen();
     }
 
     public override void TakeDamage(TankBase attacker)

@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Game\Panel\BeginScene\BeginPanel.cs" />
      <Compile Include="Assets\Scripts\Game\Panel\BeginScene\RankPanel.cs" />
      <Compile Include="Assets\Scripts\Game\Panel\BeginScene\SettingPanel.cs" />
+     <Compile Include="Assets\Scripts\Game\Panel\GameScene\FailPanel.cs" />
      <Compile Include="Assets\Scripts\Game\Panel\GameScene\GamePanel.cs" />
      <Compile Include="Assets\Scripts\Game\Panel\GameScene\PassPanel.cs" />
      <Compile Include="Assets\Scripts\Game\Panel\GameScene\QuitPanel.cs" />

@@ -44,9 +44,6 @@ public abstract class TankBase : MonoBehaviour
 
     public virtual void Dead()
     {
-        // 销毁坦克
-        Destroy(this.gameObject);
-
         // 生成死亡特效
         if (this.deadEffectPrefab != null)
         {
@@ -60,9 +57,10 @@ public abstract class TankBase : MonoBehaviour
                 audioSource.volume = GameDataManage.instance.musicData.effectVolume / 100f;
 
                 audioSource.mute = GameDataManage.instance.musicData.isOpenEffect ? false : true;
-
-                audioSource.Play();
             }
         }
+
+        // 销毁坦克
+        Destroy(this.gameObject);
     }
 }
