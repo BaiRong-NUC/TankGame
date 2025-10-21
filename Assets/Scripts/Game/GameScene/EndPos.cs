@@ -10,7 +10,10 @@ public class EndPos : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("BeginScene");
+            // 玩家到达终点，弹出通关面板
+            PassPanel.instance.OnOpen();
+            // 暂停游戏
+            Time.timeScale = 0f;
         }
     }
 }
