@@ -25,7 +25,11 @@ public class PlayerTank : TankBase
         // 鼠标左键开火
         if (Input.GetMouseButtonDown(0))
         {
-            this.Fire();
+            if (Time.timeScale != 0)
+            {
+                // 暂停游戏不开火
+                this.Fire();
+            }
         }
     }
 
