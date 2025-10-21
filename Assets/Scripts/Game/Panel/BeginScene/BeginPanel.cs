@@ -20,7 +20,7 @@ public class BeginPanel : PanelBase<BeginPanel>
             SceneManager.LoadScene("GameScene");
         };
 
-        // 设置按钮
+        // 设置按钮 
         settingButton.clickEvent += () =>
         {
             // print("设置按钮被点击");
