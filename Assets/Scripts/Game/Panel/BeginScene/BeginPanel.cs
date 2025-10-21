@@ -41,5 +41,8 @@ public class BeginPanel : PanelBase<BeginPanel>
             RankPanel.instance.OnOpen();
             this.OnClose(); //隐藏开始面板,防止事件穿透
         };
+
+        // 锁定鼠标在窗口内
+        Cursor.lockState = CursorLockMode.Confined;
     }
 }
